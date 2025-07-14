@@ -69,9 +69,7 @@ const Logo = styled.div`
   h1 {
     font-size: 2.2rem;
     margin: 0;
-    font-family: 'Pacifico', cursive;
     color: #2a3990; /* Dark blue color from the image */
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
     letter-spacing: 0.5px;
     
     @media (max-width: 768px) {
@@ -321,7 +319,7 @@ const Navbar = () => {
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }
           }}>
-            <h1>Clean Dream</h1>
+            <h1>קלין דרים</h1>
           </Logo>
           
           {/* Desktop Navigation */}

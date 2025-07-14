@@ -100,7 +100,7 @@ const Accessibility = () => {
           </p>
           <p>
             שם: רכז הנגישות<br />
-            טלפון: 055-1234567<br />
+            טלפון: 055-4315229<br />
             דוא"ל: accessibility@example.com
           </p>
           

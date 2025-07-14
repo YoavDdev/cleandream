@@ -13,6 +13,7 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
+import PhoneButton from './components/PhoneButton';
 
 // Home page component
 const Home = () => {
@@ -33,7 +34,8 @@ function App() {
     <Router>
       <GlobalStyles />
       <Navbar />
-      <WhatsAppButton phoneNumber="+972123456789" />
+      <WhatsAppButton phoneNumber="+972554315229" />
+      <PhoneButton />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

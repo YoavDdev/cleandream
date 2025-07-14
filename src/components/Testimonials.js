@@ -234,7 +234,7 @@ const ViewMoreButton = styled.a`
 
 const Testimonials = () => {
   const [currentPage, setCurrentPage] = useState(0);
-  const [autoPlay, setAutoPlay] = useState(true);
+  const [autoPlay, setAutoPlay] = useState(false); // Disabled auto-play
   
   // Real testimonials from Easy.co.il
   const testimonials = [
@@ -325,7 +325,8 @@ const Testimonials = () => {
     setCurrentPage(pageIndex);
   }, []);
   
-  // Auto-play functionality
+  // Auto-play functionality is disabled
+  // We keep the structure in case we want to re-enable it in the future
   useEffect(() => {
     let interval;
     
@@ -354,7 +355,7 @@ const Testimonials = () => {
         
         <TestimonialsCarousel>
           <AnimatedSection animation="fadeIn" delay={0.2}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', minHeight: '400px' }}>
               {displayedTestimonials.map((testimonial, index) => (
                 <TestimonialCard key={index}>
                   <QuoteIcon className="left">
