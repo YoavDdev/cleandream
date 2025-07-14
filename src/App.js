@@ -34,7 +34,7 @@ function App() {
     <Router>
       <GlobalStyles />
       <Navbar />
-      <WhatsAppButton phoneNumber="+972554315229" />
+      <WhatsAppButton phoneNumber="+972506344396" />
       <PhoneButton />
       <Routes>
         <Route path="/" element={<Home />} />
