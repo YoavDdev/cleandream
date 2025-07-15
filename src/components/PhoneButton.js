@@ -12,6 +12,10 @@ const PhoneButtonWrapper = styled.div`
   align-items: center;
   z-index: 999;
   direction: rtl;
+  
+  @media (max-width: 480px) {
+    left: 14px;
+  }
 `;
 
 const PhoneButtonContainer = styled.a`
