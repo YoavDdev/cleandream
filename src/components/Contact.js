@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 import AnimatedSection from './AnimatedSection';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -111,6 +112,11 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState('');
   
+  useEffect(() => {
+    // Initialize EmailJS with your public key
+    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual EmailJS public key
+  }, []);
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
@@ -124,11 +130,22 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      // In a real application, you would send this data to your backend
-      // For now, we'll just simulate a successful submission
+      // Send email using EmailJS
+      // The email will be sent to Liadshemi1212@gmail.com
+      const templateParams = {
+        to_email: 'Liadshemi1212@gmail.com',
+        from_name: formData.name,
+        from_email: formData.email,
+        from_phone: formData.phone,
+        message: formData.message
+      };
       
-      // Simulating API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Replace with your actual EmailJS service ID and template ID
+      await emailjs.send(
+        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        templateParams
+      );
       
       // Reset form
       setFormData({
@@ -145,6 +162,7 @@ const Contact = () => {
         setSubmitMessage('');
       }, 5000);
     } catch (error) {
+      console.error('Error sending email:', error);
       setSubmitMessage('אירעה שגיאה בשליחת הטופס. אנא נסו שנית.');
     } finally {
       setIsSubmitting(false);

@@ -120,7 +120,7 @@ const Privacy = () => {
           </p>
           <p>
             טלפון: 055-4315229<br />
-            דוא"ל: privacy@example.com
+            דוא"ל: Liadshemi1212@gmail.com
           </p>
           
           <h2>תאריך עדכון אחרון</h2>

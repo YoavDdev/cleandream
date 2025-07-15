@@ -101,7 +101,7 @@ const Accessibility = () => {
           <p>
             שם: רכז הנגישות<br />
             טלפון: 055-4315229<br />
-            דוא"ל: accessibility@example.com
+            דוא"ל: Liadshemi1212@gmail.com
           </p>
           
           <h2>תאריך עדכון ההצהרה</h2>
