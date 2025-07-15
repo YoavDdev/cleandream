@@ -100,7 +100,7 @@ const Accessibility = () => {
           </p>
           <p>
             שם: רכז הנגישות<br />
-            טלפון: 055-4315229<br />
+            טלפון: 055-4528012<br />
             דוא"ל: shemtovmimi@gmail.com
           </p>
           

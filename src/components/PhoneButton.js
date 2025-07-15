@@ -82,7 +82,7 @@ const PhoneButton = () => {
   return (
     <PhoneButtonWrapper>
       <PhoneText>התקשרו אלינו ואנו נדאג לכל השאר!</PhoneText>
-      <PhoneButtonContainer href="tel:0554315229" aria-label="התקשר אלינו">
+      <PhoneButtonContainer href="tel:0554528012" aria-label="התקשר אלינו">
         <FontAwesomeIcon icon={faPhone} />
       </PhoneButtonContainer>
     </PhoneButtonWrapper>
