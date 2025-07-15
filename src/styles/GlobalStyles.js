@@ -17,13 +17,20 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
   }
 
-  html {
+  html, body, #root {
     scroll-behavior: smooth;
     direction: rtl;
     overflow-x: hidden;
     width: 100%;
+    max-width: 100%;
+    position: relative;
+  }
+  
+  html {
+    overflow-x: hidden;
   }
 
   body {
@@ -35,6 +42,7 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
     max-width: 100vw;
     position: relative;
+    touch-action: pan-y;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -84,6 +92,9 @@ const GlobalStyles = createGlobalStyle`
 
   section {
     padding: 4rem 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   .container {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import styled from 'styled-components';
 import GlobalStyles from './styles/GlobalStyles';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -29,20 +30,28 @@ const Home = () => {
   );
 };
 
+const AppWrapper = styled.div`
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+`;
+
 function App() {
   return (
     <Router>
       <GlobalStyles />
-      <Navbar />
-      <WhatsAppButton phoneNumber="+972506344396" />
-      <PhoneButton />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/accessibility" element={<Accessibility />} />
-        <Route path="/privacy" element={<Privacy />} />
-      </Routes>
-      <Footer />
+      <AppWrapper>
+        <Navbar />
+        <WhatsAppButton phoneNumber="+972506344396" />
+        <PhoneButton />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/accessibility" element={<Accessibility />} />
+          <Route path="/privacy" element={<Privacy />} />
+        </Routes>
+        <Footer />
+      </AppWrapper>
     </Router>
   );
 }
