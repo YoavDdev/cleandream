@@ -114,7 +114,7 @@ const Contact = () => {
   
   useEffect(() => {
     // Initialize EmailJS with your public key
-    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual EmailJS public key
+    emailjs.init("edl6gV7OlM-_Cleca");
   }, []);
   
   const handleChange = (e) => {
@@ -131,19 +131,19 @@ const Contact = () => {
     
     try {
       // Send email using EmailJS
-      // The email will be sent to Liadshemi1212@gmail.com
+      // The email will be sent to shemtovmimi@gmail.com
       const templateParams = {
-        to_email: 'Liadshemi1212@gmail.com',
+        to_email: 'shemtovmimi@gmail.com',
         from_name: formData.name,
         from_email: formData.email,
         from_phone: formData.phone,
         message: formData.message
       };
       
-      // Replace with your actual EmailJS service ID and template ID
+      // Send email using EmailJS with provided credentials
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        'service_bzjtg7m',
+        'template_9xxq8kw',
         templateParams
       );
       
