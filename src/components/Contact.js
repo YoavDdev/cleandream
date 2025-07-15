@@ -171,7 +171,7 @@ const Contact = () => {
               <p><FontAwesomeIcon icon={faClock} /> א'-ה': 08:00-19:00, ו': 08:00-13:00</p>
               
               <ContactButtons>
-                <a href="tel:0551234567" className="btn primary-btn">התקשרו אלינו</a>
+                <a href="tel:055-4315229" className="btn primary-btn">התקשרו אלינו</a>
                 <a href="https://wa.me/9721234567" className="btn secondary-btn">שלחו לנו הודעה</a>
               </ContactButtons>
             </ContactInfo>

@@ -142,7 +142,7 @@ const Offers = () => {
           <AnimatedSection animation="fadeIn" delay={0.2}>
             <OfferText>
               <IconWrapper><FontAwesomeIcon icon={faTshirt} /></IconWrapper>
-              שירותי כביסה קיפול ייבוש סידור הבגדים לכם נשאר רק להכניס לארון<br/>
+              שירותי כביסה קיפול ייבוש סידור הבגדים, לכם נשאר רק להכניס לארון<br/>
               <IconWrapper><FontAwesomeIcon icon={faSprayCan} /></IconWrapper>
               כל סוגי הניקוי יבש<br/>
               <IconWrapper><FontAwesomeIcon icon={faWindowMaximize} /></IconWrapper>
@@ -158,7 +158,7 @@ const Offers = () => {
               <IconWrapper><FontAwesomeIcon icon={faTruck} /></IconWrapper>
               <strong>שירות משלוחים מהיר איסוף והחזרה מבית הלקוח</strong><br/>
               <IconWrapper><FontAwesomeIcon icon={faMedal} /></IconWrapper>
-              מדורגים מקום ראשון באיזי ובגוגל
+              <span style={{fontSize: '1.4rem', fontWeight: 'bold', color: 'var(--primary-blue)'}}>מדורגים מקום ראשון באיזי ובגוגל</span>
             </OfferText>
             
             <DeliveryAreasContainer>
@@ -167,7 +167,7 @@ const Offers = () => {
                 משלוחים חינם באזורי:
               </h3>
               <div className="areas">
-                הוד השרון <span>|</span> רמות השבים <span>|</span> ירקונה <span>|</span> אלישמע <span>|</span> כפר מלל <span>|</span> בצרה <span>|</span> כפר סבא
+                הוד השרון <span>|</span> רמות השבים <span>|</span> ירקונה <span>|</span> אלישמע <span>|</span> כפר מלל <span>|</span> בצרה <span>|</span> כפר סבא <span>|</span> רעננה
               </div>
               <div className="note">
                 *כפוף למינימום. ניתן לספק משלוחים לערים נוספות בתשלום נוסף.
