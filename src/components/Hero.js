@@ -9,31 +9,19 @@ const HeroSection = styled.section`
   background: linear-gradient(rgba(30, 136, 229, 0.8), rgba(13, 71, 161, 0.9)), url('https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=2071&auto=format&fit=crop');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   color: var(--white);
   text-align: center;
   padding: 8rem 1rem;
   margin-top: 4rem;
   height: 80vh;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
-  
-  @media (max-width: 768px) {
-    background-attachment: scroll;
-    width: 100vw;
-    margin-left: 0;
-    margin-right: 0;
-  }
 `;
 
 const HeroContent = styled.div`
   max-width: 800px;
   margin: 0 auto;
-  width: 100%;
 `;
 
 const HeroTitle = styled.h1`

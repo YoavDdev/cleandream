@@ -22,6 +22,8 @@ const GlobalStyles = createGlobalStyle`
   html {
     scroll-behavior: smooth;
     direction: rtl;
+    overflow-x: hidden;
+    width: 100%;
   }
 
   body {
@@ -29,6 +31,10 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--white);
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+    position: relative;
   }
 
   h1, h2, h3, h4, h5, h6 {
