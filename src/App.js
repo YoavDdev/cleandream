@@ -34,6 +34,9 @@ const AppWrapper = styled.div`
   width: 100%;
   overflow-x: hidden;
   position: relative;
+  height: auto;
+  min-height: 100%;
+  touch-action: manipulation;
 `;
 
 function App() {

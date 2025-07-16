@@ -43,14 +43,17 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <!-- UserWay Accessibility Widget -->
+    <!-- UserWay Accessibility Widget - Deferred loading to prevent scroll blocking -->
     <script>
-      (function(d) {
-        var s = d.createElement("script");
-        s.setAttribute("data-account", "YOUR_ACCOUNT_ID");
-        s.setAttribute("src", "https://cdn.userway.org/widget.js");
-        (d.body || d.head).appendChild(s);
-      })(document)
+      // Defer UserWay widget loading to prevent initial scroll blocking
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var s = document.createElement("script");
+          s.setAttribute("data-account", "YOUR_ACCOUNT_ID");
+          s.setAttribute("src", "https://cdn.userway.org/widget.js");
+          (document.body || document.head).appendChild(s);
+        }, 3000); // Load after 3 seconds to ensure page is fully interactive first
+      });
     </script>
     <noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
   </body>

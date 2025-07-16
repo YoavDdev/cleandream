@@ -42,7 +42,8 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
     max-width: 100vw;
     position: relative;
-    touch-action: pan-y;
+    touch-action: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   h1, h2, h3, h4, h5, h6 {

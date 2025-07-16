@@ -13,10 +13,13 @@ const HeroSection = styled.section`
   text-align: center;
   padding: 8rem 1rem;
   margin-top: 4rem;
-  height: 80vh;
+  min-height: 80vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  touch-action: auto;
+  -webkit-overflow-scrolling: touch;
 `;
 
 const HeroContent = styled.div`

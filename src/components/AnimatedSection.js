@@ -64,6 +64,7 @@ const AnimatedSection = ({
       initial="hidden"
       animate={controls}
       variants={selectedAnimation}
+      style={{ touchAction: 'auto', WebkitOverflowScrolling: 'touch' }}
       {...props}
     >
       {children}
