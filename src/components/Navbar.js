@@ -260,11 +260,12 @@ const MobileContactButton = styled(Link)`
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isInitialLoad, setIsInitialLoad] = useState(true);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-    // Prevent scrolling when menu is open
-    if (!isOpen) {
+    // Prevent scrolling when menu is open, but only if not in initial load state
+    if (!isOpen && !isInitialLoad) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'auto';
@@ -276,6 +277,19 @@ const Navbar = () => {
     document.body.style.overflow = 'auto';
   };
 
+  // Ensure body overflow is set to auto on component mount
+  useEffect(() => {
+    // Reset body overflow to auto on component mount
+    document.body.style.overflow = 'auto';
+    
+    // After a short delay, mark initial load as complete
+    const timer = setTimeout(() => {
+      setIsInitialLoad(false);
+    }, 1000);
+    
+    return () => clearTimeout(timer);
+  }, []);
+  
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
