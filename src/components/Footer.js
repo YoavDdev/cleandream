@@ -137,7 +137,6 @@ const Footer = () => {
             <ul>
               <li><a href="#home">דף הבית</a></li>
               <li><a href="#services">השירותים שלנו</a></li>
-              <li><a href="#magic">הקסם שלנו</a></li>
               <li><a href="#contact">צור קשר</a></li>
             </ul>
           </FooterLinks>
