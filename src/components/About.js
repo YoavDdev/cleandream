@@ -12,8 +12,7 @@ import {
   faShoppingBasket, 
   faTruck,
   faMapMarkerAlt,
-  faPhone,
-  faClock
+  faPhone
 } from '@fortawesome/free-solid-svg-icons';
 
 const AboutSection = styled.section`
@@ -213,7 +212,11 @@ const About = () => {
             <h3>פרטי יצירת קשר</h3>
             <p><FontAwesomeIcon icon={faMapMarkerAlt} /> דרך רמתיים 35, הוד השרון</p>
             <p><FontAwesomeIcon icon={faPhone} /> 055-4528012</p>
-            <p><FontAwesomeIcon icon={faClock} /> א'-ה': 08:00-19:00, ו': 08:00-13:00</p>
+            <p>
+              ימים א׳, ב׳, ד׳, ה׳ 18:00 - 08:00<br/>
+              יום ג׳ - 14:30 - 08:00<br/>
+              יום שישי - 13:00 - 08:00
+            </p>
           </ContactInfo>
         </AnimatedSection>
       </AboutContainer>

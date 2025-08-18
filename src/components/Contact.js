@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 import AnimatedSection from './AnimatedSection';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt, faPhone, faClock } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const ContactSection = styled.section`
   background-color: var(--very-light-blue);
@@ -186,7 +186,11 @@ const Contact = () => {
               <h3>פרטי יצירת קשר</h3>
               <p><FontAwesomeIcon icon={faMapMarkerAlt} />  דרך רמתיים 35, הוד השרון</p>
               <p><FontAwesomeIcon icon={faPhone} /> 055-4528012</p>
-              <p><FontAwesomeIcon icon={faClock} /> א'-ה': 08:00-19:00, ו': 08:00-13:00</p>
+              <p>
+                ימים א׳, ב׳, ד׳, ה׳ 18:00 - 08:00<br/>
+                יום ג׳ - 14:30 - 08:00<br/>
+                יום שישי - 13:00 - 08:00
+              </p>
               
               <ContactButtons>
                 <a href="tel:055-4528012" className="btn primary-btn">התקשרו אלינו</a>

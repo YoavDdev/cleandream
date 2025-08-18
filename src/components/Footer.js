@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt, faPhone, faClock, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const FooterSection = styled.footer`
   background-color: var(--secondary-blue);
@@ -157,7 +157,11 @@ const Footer = () => {
             <p><FontAwesomeIcon icon={faMapMarkerAlt} /> דרך רמתיים 35, הוד השרון</p>
             <p><FontAwesomeIcon icon={faPhone} /> 055-4528012</p>
             <p><FontAwesomeIcon icon={faEnvelope} /> shemtovmimi@gmail.com</p>
-            <p><FontAwesomeIcon icon={faClock} /> א'-ה': 08:00-19:00, ו': 08:00-13:00</p>
+            <p>
+              ימים א׳, ב׳, ד׳, ה׳ 18:00 - 08:00<br/>
+              יום ג׳ - 14:30 - 08:00<br/>
+              יום שישי - 13:00 - 08:00
+            </p>
           </FooterContact>
         </FooterContent>
         
