@@ -155,7 +155,7 @@ const Footer = () => {
           <FooterContact>
             <h3>צרו קשר</h3>
             <p><FontAwesomeIcon icon={faMapMarkerAlt} /> דרך רמתיים 35, הוד השרון</p>
-            <p><FontAwesomeIcon icon={faPhone} /> 055-4528012</p>
+            <p><FontAwesomeIcon icon={faPhone} /> 09-8331346</p>
             <p><FontAwesomeIcon icon={faEnvelope} /> shemtovmimi@gmail.com</p>
             <p>
               ימים א׳, ב׳, ד׳, ה׳ 18:00 - 08:00<br/>
