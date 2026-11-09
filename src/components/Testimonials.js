@@ -234,7 +234,7 @@ const ViewMoreButton = styled.a`
 
 const Testimonials = () => {
   const [currentPage, setCurrentPage] = useState(0);
-  const [autoPlay, setAutoPlay] = useState(false); // Disabled auto-play
+  const [autoPlay] = useState(false); // Disabled auto-play
   
   // Real testimonials from Easy.co.il
   const testimonials = [

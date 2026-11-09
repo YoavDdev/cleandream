@@ -4,14 +4,12 @@ import AnimatedSection from './AnimatedSection';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faTshirt, 
-  faIron, 
   faCouch, 
   faSoap, 
   faBed, 
   faHeart, 
   faShoppingBasket, 
   faTruck,
-  faHandsWash,
   faStream
 } from '@fortawesome/free-solid-svg-icons';
 
