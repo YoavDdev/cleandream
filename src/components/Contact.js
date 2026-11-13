@@ -185,7 +185,7 @@ const Contact = () => {
             <ContactInfo>
               <h3>פרטי יצירת קשר</h3>
               <p><FontAwesomeIcon icon={faMapMarkerAlt} />  דרך רמתיים 35, הוד השרון</p>
-              <p><FontAwesomeIcon icon={faPhone} /> 09-8331346</p>
+              <p><FontAwesomeIcon icon={faPhone} /> 055-4528012</p>
               <p>
                 ימים א׳, ב׳, ד׳, ה׳ 18:00 - 08:00<br/>
                 יום ג׳ - 14:30 - 08:00<br/>
@@ -193,7 +193,7 @@ const Contact = () => {
               </p>
               
               <ContactButtons>
-                <a href="tel:098331346" className="btn primary-btn">התקשרו אלינו</a>
+                <a href="tel:0554528012" className="btn primary-btn">התקשרו אלינו</a>
                 <a href="https://wa.me/972506344396" className="btn secondary-btn">שלחו לנו הודעה</a>
               </ContactButtons>
             </ContactInfo>
